@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./images/Y-favicon.png">
+    <title>Login Page</title>
+</head>
+<body>
+    <!--complete body/backgroung start-->
+    <div class="hero">
+        <h1 class="heading">Login & Registration Web By Glory Guy</h1>
+        <!--form box start-->
+        <div class="form-box">
+            <!--Login registration btn start-->
+            <div class="btn-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="loginK()">Login</button>
+                <button type="button" class="toggle-btn" onclick="registerK()">Register</button>
+            </div>
+           <!--Login registration btn end-->
+           <!--social icons start-->
+            <div class="social-icons">
+                <img src="./images/facebook.png" alt="">
+                <img src="./images/google.png" alt="">
+                <img src="./images/instagram.png" alt="">
+            </div>
+           <!--social icons end-->
+           <!--Form start (Login)-->
+            <form id="login" class="input-item">
+             <input type="text" class="input-field" placeholder="user id ">
+             <input type="text" class="input-field" placeholder="enter password">
+             <input type="checkbox" class="check-box"><span>Remeber password</span>
+            <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <!--Form end (Login)-->
+            <!--Form start (Registration)-->
+            <form id="register" class="input-item">
+            <input type="email" class="input-field" placeholder="user id ">
+            <input type="number" class="input-field" placeholder="Enter Phone number">
+            <input type="password" class="input-field" placeholder="Enter password">
+            <input type="checkbox" class="check-box"><span>I Agree Terms & Condition</span>
+           <button type="submit" class="submit-btn">Registration</button>
+        </form>
+            <!--Form start (Registration)-->
+        </div>
+        <!--form box end-->
+    </div>
+    <!--complete body/backgroung start-->
+
+    <!--Script Start-->
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function registerK(){
+             x.style.left ="-400px";
+             y.style.left = "50px";
+             z.style.left = "110px";
+        }
+        function loginK(){
+             x.style.left ="50px";
+             y.style.left = "450px";
+             z.style.left = "0px";
+        }
+
+
+    </script>
+    <!--Script end-->
+</body>
+</html>
